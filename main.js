@@ -9,7 +9,7 @@ const category = require("./routes/category");
 const result = require("./routes/results");
 const config = require("./configs/db");
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const db = mysql.createPool(config);
 
